@@ -1,0 +1,6 @@
+C:\Users\AUD307\source\repos\для 6\для 6\bin\Debug\для 6.dll
+C:\Users\AUD307\source\repos\для 6\для 6\bin\Debug\для 6.pdb
+C:\Users\AUD307\source\repos\для 6\для 6\obj\Debug\для 6.csproj.AssemblyReference.cache
+C:\Users\AUD307\source\repos\для 6\для 6\obj\Debug\для 6.csproj.CoreCompileInputs.cache
+C:\Users\AUD307\source\repos\для 6\для 6\obj\Debug\для 6.dll
+C:\Users\AUD307\source\repos\для 6\для 6\obj\Debug\для 6.pdb

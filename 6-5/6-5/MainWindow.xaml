@@ -1,0 +1,56 @@
+﻿<Window x:Class="CityApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Путешествие туриста" Height="500" Width="600">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Ввод данных -->
+        <StackPanel Orientation="Vertical" Grid.Row="0" Margin="0,0,0,10">
+            <GroupBox Header="Информация о городе" Margin="0,0,0,10">
+                <StackPanel>
+                    <Label Content="Название города:"/>
+                    <TextBox x:Name="CityNameInput" Margin="0,5"/>
+
+                    <Label Content="Численность населения:"/>
+                    <TextBox x:Name="CityPopulationInput" Margin="0,5"/>
+
+                    <Label Content="Площадь (км²):"/>
+                    <TextBox x:Name="CityAreaInput" Margin="0,5"/>
+
+                    <Label Content="Количество достопримечательностей:"/>
+                    <TextBox x:Name="CityLandmarksInput" Margin="0,5"/>
+
+                    <Label Content="Стоимость проживания (руб/день):"/>
+                    <TextBox x:Name="CityDailyCostInput" Margin="0,5"/>
+                </StackPanel>
+            </GroupBox>
+
+            <GroupBox Header="Информация о туристе" Margin="0,0,0,10">
+                <StackPanel>
+                    <Label Content="Имя туриста:"/>
+                    <TextBox x:Name="TouristNameInput" Margin="0,5"/>
+
+                    <Label Content="Сумма денег (руб):"/>
+                    <TextBox x:Name="TouristMoneyInput" Margin="0,5"/>
+
+                    <Label Content="Достопримечательностей в день:"/>
+                    <TextBox x:Name="TouristLandmarksInput" Margin="0,5"/>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+
+        <!-- Кнопки -->
+        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Left">
+            <Button Content="Новый город" x:Name="NewCityButton" Click="NewCityButton_Click" Margin="0,0,0,10"/>
+            <Button Content="Посетить" x:Name="VisitButton" Click="VisitButton_Click" Margin="0,0,0,10" IsEnabled="False"/>
+            <Button Content="Статистика" x:Name="StatisticsButton" Click="StatisticsButton_Click"/>
+        </StackPanel>
+
+        <!-- Вывод данных -->
+        <TextBlock x:Name="OutputBlock" Grid.Row="1" Margin="150,0,0,0" TextWrapping="Wrap"/>
+    </Grid>
+</Window>
